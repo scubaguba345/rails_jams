@@ -1,5 +1,5 @@
 <h1>Names of Artists</h1>
 
 <%@artists.each do |artist|%>
-    <div><%=artist.name%></div>
+    <div><%=link_to artist.name, artist_path(artist) %></div>
 <%end%>
